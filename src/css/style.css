@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    height: 67px;
+    width: 100%;
+    background-color: #C3CFD9;
+    color: #E8833A;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 117px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    padding: 12px;
+    background-color: #dfe6ed;
+    border-top: solid 1px #9eadba;
+}
+
+.movie-card {
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 145px;
+}
+
+.movie-card img {
+    max-height: 190px;
+}
+
+.footer .movie-card {
+    width: 64px;
+}
+
+.footer .movie-card img {
+    max-height: 80px;
+}
+
+.footer .movie-info {
+    color: #293845;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-left: 14px;
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer .movie-info h4 {
+    margin-bottom: 10px;
+}
+
+.page-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.page-title h2 {
+    font-size: 20px;
+    color: #293845;
+}
+
+.page-title.finished h2 {
+    color: #247A6B;
+}
+
+.movies-list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.movies-list .movie-card {
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.session-selection {
+    padding-left: 24px;
+    margin-bottom: 140px;
+}
+
+.session-selection .session-item {
+    margin-top: 40px;
+}
+
+.session-selection .session-item h6 {
+    font-size: 18px;
+    color: #293845;
+}
+
+.session-selection .session-item .available-options {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    padding: 12px;
+    background-color: #E8833A;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    margin: 4px;
+}
+
+.seats-wrapper .seats-list {
+    margin: 15px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seats-wrapper .seat {
+    border-radius: 50%;
+    background-color: #C3CFD9;
+    border: solid 1px #808F9D;
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: progress;
+}
+
+.seats-wrapper .seat.selected {
+    background-color: #8DD7CF;
+    border: solid 1px #45BDB0;
+}
+
+.seats-wrapper .seat.unavailable {
+    background-color: #FBE192;
+    border: solid 1px #F7C52B;
+}
+
+.seats-legends {
+    justify-content: space-evenly;
+}
+
+.seats-legends > div {
+    flex-direction: column;
+    align-items: center;
+}
+
+.seats-legends > div p {
+    color: #4E5A65;
+    font-size: 14px;
+}
+
+.seats-screen {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.seats-screen form {
+    margin-top: 40px;
+    width: 85%;
+    flex-direction: column;
+}
+
+.seats-screen form .form-group {
+    flex-direction: column;
+}
+
+.seats-screen form .form-group label {
+    font-size: 18px;
+    color: #293845;
+    margin-bottom: 3px;
+}
+
+.seats-screen form .form-group input {
+    margin-bottom: 15px;
+    height: 40px;
+    color: #afafaf;
+    border: solid 1px #d4d4d4;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.seats-screen form button {
+    align-self: center;
+    margin-top: 40px;
+}
+
+.finish-order {
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.finish-order > div {
+    margin-top: 35px;
+    color: #293845;
+}
+
+.finish-order > div h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.finish-order > div p {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.finish-order button {
+    margin: 40px 0;
+}
